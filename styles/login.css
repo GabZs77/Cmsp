@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --cor-botao-primario:#325794;
+  --cor-botao-secundario:#FFFFFF;
+  --cor-caixa-mensagem: #f33535;
+  --cinza:#4b4b4b;
+  --borda: light-dark(#757575, #858585);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://edusp-static.ip.tv/webinar/edusp/background.png);
+  font-family:'Roboto' ;
+  height: 100vh;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2rem 3rem 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.message-inputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  
+  background-color: var(--cor-caixa-mensagem);
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  color: #f0f8ff;
+}
+
+main {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.login__texto {
+  margin-top:15px;
+}
+
+.login-box {
+  background-color: white;
+  padding:1.5em;
+  text-align: center;
+  width:350px;
+}
+
+.box-input {
+  display:grid;
+  grid-template-columns: 50% 25% 25%;
+  margin-top:2em;
+}
+
+.label__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 11px;
+  color: var(--cinza);
+}
+
+.input-first {
+  width:90%;
+  border-top:none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.5px solid var(--borda);
+  outline: none;
+  padding: 0.5em;
+}
+
+.input {
+  width:50%;
+  border-top:none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.5px solid var(--borda);
+  outline: none;
+  padding: 0.5em;
+}
+
+.seletor__input {
+  border: none;
+  border-bottom: 1px solid var(--borda);
+  height: 32px;
+}
+
+.input__senha {
+  margin-top:2em;
+  width:70%;
+  border-top:none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.5px solid var(--borda);
+  outline: none;
+  font-size: 11px;
+  color: var(--cinza);
+  padding: 0.5em;
+}
+
+.input-botoes {
+  display:flex;
+  flex-direction:column;
+  margin-top:2em;
+  gap:15px;
+}
+
+.input__botao {
+  background-color: var(--cor-botao-primario);
+  padding:9px 0;
+  color:var(--cor-botao-secundario);
+  text-decoration:none;
+  border-radius:8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.secundario {
+  background-color: var(--cor-botao-secundario);
+  color:var(--cor-botao-primario);
+}
+
+.form__aviso {
+  color:var(--cor-botao-primario);
+  font-size: 11px;
+  margin-top:1em;
+}
+
+.form__aviso a {
+  color:var(--cor-botao-primario);
+}
